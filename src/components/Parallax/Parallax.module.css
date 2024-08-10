@@ -1,0 +1,44 @@
+.wrapper-p {
+    height:100vh;
+    overflow-y:auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    }
+.wrapper-p::-webkit-scrollbar {
+    width:0;
+}
+    
+.header {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.title {
+    font-size:2.3rem;
+    color:#ffffff;
+    text-shadow: 0 0 5px #000000;
+    text-decoration: none;
+}
+.button-p {
+    border-radius: 40px;
+    padding:10px;
+    transition-duration: 0.3s;
+}
+.button-p:hover{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.background {
+    transform: translateZ(-5px) scale(1.5);
+}
+.background:hover {
+    filter: gray(100);
+}
