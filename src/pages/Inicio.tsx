@@ -1,7 +1,7 @@
 // import gampLogo from './assets/react.svg'
-import jumboimg1 from './assets/jumbo-img1.png';
-import CAImg1 from './assets/call-action1.png';
-import './App.css'
+import jumboimg1 from './../assets/jumbo-img1.png';
+import CAImg1 from './../assets/call-action1.png';
+import './../App.css'
 import Navbar from './../components/Navbar'
 // import Accordion from './components/Accordion'
 // import Dropdown from './components/Dropdown'
