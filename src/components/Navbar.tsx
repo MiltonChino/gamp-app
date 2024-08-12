@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
-
+// import { ReactNode } from "react";
+// import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link } from "react-router-dom";
 // type Props = {
 //   data: string[];
 // };
@@ -20,13 +20,13 @@ function Navbar() {
             Inicio
           </a>
         </li> */}
-        <CustomLink to="/">Inicio</CustomLink>
+        <Link to="/">Inicio</Link>
         {/* <li className="nav-item">
           <a className="nav-link" href="#">
             Gaceta
           </a>
         </li> */}
-        <CustomLink to="/gaceta">Gaceta</CustomLink>
+        <Link to="/gaceta">Gaceta</Link>
         <li className="nav-item dropdown">
           <a
             className="nav-link dropdown-toggle"
@@ -40,46 +40,39 @@ function Navbar() {
             Direcciones
           </a>
           <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <CustomLink to={"/" + dropdownMenu[0]}>
-              {dropdownMenu[0]}
-            </CustomLink>
-            <CustomLink to={"/" + dropdownMenu[1]}>
-              {dropdownMenu[1]}
-            </CustomLink>
-            <CustomLink to={"/" + dropdownMenu[2]}>
-              {dropdownMenu[2]}
-            </CustomLink>
-            <CustomLink to={"/" + dropdownMenu[3]}>
-              {dropdownMenu[3]}
-            </CustomLink>
+            <Link to={"/" + dropdownMenu[0]}>{dropdownMenu[0]}</Link>
+            <Link to={"/" + dropdownMenu[1]}>{dropdownMenu[1]}</Link>
+            <Link to={"/" + dropdownMenu[2]}>{dropdownMenu[2]}</Link>
+            <Link to={"/" + dropdownMenu[3]}>{dropdownMenu[3]}</Link>
           </div>
         </li>
         {/* <li className="nav-item">
     <a className="nav-link" href="#">Contáctanos</a>
   </li> */}
-        <CustomLink to="/contacto">Contactanos</CustomLink>
+        <Link to="/contacto">Contáctanos</Link>
       </ul>
     </div>
   );
 }
 
-type Props = {
-  to: string;
-  children: ReactNode;
-};
+// type Props = {
+//   to: string;
+//   children: ReactNode;
+// };
 
-function CustomLink(props: Props) {
-  const { to, children } = props;
-  const resolvedPath = useResolvedPath(to);
-  var isActive = false;
-  isActive = useMatch({ path: resolvedPath.pathname, end: true });
-  return (
-    <li className={isActive === to ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
-  );
-}
+// function CustomLink(props: Props) {
+// const { to, children } = props;
+// const resolvedPath = useResolvedPath(to);
+// var isActive = false;
+// console.log(typeof(isActive))
+// isActive = useMatch({ path: resolvedPath.pathname, end: true });
+// return (
+// <li className={isActive === to ? "active" : ""}>
+//   <Link to={to} {...props}>
+//     {children}
+//   </Link>
+// </li>
+// );
+// }
 
 export default Navbar;
