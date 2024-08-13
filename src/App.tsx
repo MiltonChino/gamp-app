@@ -7,34 +7,35 @@ import Contacto from "./pages/Contacto";
 import Navbar from "./components/Navbar";
 
 function App() {
-  // let component
-  // switch (window.location.pathname) {
-  //   case "/":
-  //     component = <Inicio />
-  //     break
-  //     case "/gaceta":
-  //       component = <Gaceta />
-  //       break
-  //       case "/direccion":
-  //     component = <Direccion />
-  //     break
-  //     case "/contacto":
-  //     component = <Contacto />
-  //     break
-  // }
+  let component
+  switch (window.location.pathname) {
+    case "/":
+      component = <Inicio />
+      break
+      case "/gaceta":
+        component = <Gaceta />
+        break
+        case "/direccion":
+      component = <Direccion />
+      break
+      case "/contacto":
+      component = <Contacto />
+      break
+  }
   return (
     <>
       <Navbar />
-      <div className="container">
-        <Router>
+      {component}
+      {/* <div className="container"> */}
+        {/* <Router>
           <Routes>
             <Route path="/" element={<Inicio />} />
             <Route path="/gaceta" element={<Gaceta />} />
             <Route path="/direccion" element={<Direccion />} />
             <Route path="/contacto" element={<Contacto />} />
           </Routes>
-        </Router>
-      </div>
+        </Router> */}
+      {/* </div> */}
     </>
   );
 }
