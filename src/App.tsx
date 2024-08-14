@@ -10,21 +10,6 @@ import NavIcon from "./components/NavIcon";
 import Footer from "./components/Footer";
 
 function App() {
-  // let component
-  // switch (window.location.pathname) {
-  //   case "/":
-  //     component = <Inicio />
-  //     break
-  //     case "/gaceta":
-  //       component = <Gaceta />
-  //       break
-  //       case "/direccion":
-  //     component = <Direccion />
-  //     break
-  //     case "/contacto":
-  //     component = <Contacto />
-  //     break
-  // }
   return (
     <>
       <NavIcon />
