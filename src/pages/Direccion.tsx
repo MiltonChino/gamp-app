@@ -12,11 +12,13 @@ function Direccion() {
     content,
     personal = "";
   const { id } = useParams();
+  console.log(id);
   switch (id) {
     case "agronomia-y-medio-ambiente":
       direccion = "Dirección de Agronomía y Medio ambiente";
       content = "Conoce la direccion";
       personal = "unknown";
+
       break;
     case "urbanismo-y-catastro":
       direccion = "Dirección de Urbanismo y Catastro";
@@ -29,7 +31,7 @@ function Direccion() {
       personal = "unknown";
       break;
     case "desarrollo-humano":
-      direccion = "Urbanismo y Catastro";
+      direccion = "Desarrollo Humano";
       content = "Conoce la direccion";
       personal = "unknown";
       break;
@@ -52,7 +54,7 @@ function Direccion() {
         </CallAction>
         <h2></h2>
         <p>Here enter direccion info</p>
-        <h6>Director{personal}</h6>
+        <h6>Director {personal}</h6>
         {/* If you have a Database then you'll be able to map through the list for the card info, and print only one time.*/}
       </div>
     </>

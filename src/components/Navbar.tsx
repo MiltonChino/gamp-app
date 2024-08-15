@@ -50,16 +50,16 @@ function Navbar() {
             Direcciones
           </a>
           <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <Link to={"/direccion:" + navLinks[0]} className="nav-link">
+            <Link to={"/direccion/" + navLinks[0]} className="nav-link">
               {dropdownMenu[0]}
             </Link>
-            <Link to={"/direccion:" + navLinks[1]} className="nav-link">
+            <Link to={"/direccion/" + navLinks[1]} className="nav-link">
               {dropdownMenu[1]}
             </Link>
-            <Link to={"/direccion:" + navLinks[2]} className="nav-link">
+            <Link to={"/direccion/" + navLinks[2]} className="nav-link">
               {dropdownMenu[2]}
             </Link>
-            <Link to={"/direccion:" + navLinks[3]} className="nav-link">
+            <Link to={"/direccion/" + navLinks[3]} className="nav-link">
               {dropdownMenu[3]}
             </Link>
           </div>
