@@ -394,15 +394,6 @@ function Gaceta() {
                       >
                         Ver Descripción
                       </button>
-                      <button
-                        type="button"
-                        className="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        <span className="sr-only">Toggle Dropdown</span>
-                      </button>
                       <div className="dropdown-menu">
                         <a className="dropdown-item" href="#">
                           LEY MUNICIPAL DE CREACIÓN Y ADMINISTRACIÓN DE PATENTES

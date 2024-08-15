@@ -11,7 +11,7 @@ import ButtonGroup from "./../components/ButtonGroup";
 import Card, { CardBody } from "./../components/Card";
 import CallAction, { CallActionBody } from "./../components/CallAction";
 import Scroller, { ScrollCard } from "./../components/Scroller";
-import Footer from "./../components/Footer";
+// import Footer from "./../components/Footer";
 import Gallery from "./../components/Gallery";
 // import Parallax from './components/Parallax';
 // import {ReactDataTables} from 'react-data-tables-components';

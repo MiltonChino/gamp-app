@@ -18,9 +18,15 @@ function App() {
         <Route path="/" element={<Inicio />} />
         <Route path="/gaceta" element={<Gaceta />} />
         <Route
-          path="/direccion/agronomia-y-medio-ambiente"
+          path="/direccion:agronomia-y-medio-ambiente"
           element={<Direccion />}
         />
+        <Route path="/direccion:urbanismo-y-catastro" element={<Direccion />} />
+        <Route
+          path="/direccion:administrativa-financiera"
+          element={<Direccion />}
+        />
+        <Route path="/direccion:desarrollo-humano" element={<Direccion />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
