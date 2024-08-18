@@ -1,39 +1,61 @@
-// import img1 from '5.png'
-// import img2 from '7.png'
-// import img3 from '8.png'
-// import img4 from '11.png'
+// import { MouseEvent } from "react";
+// import { lazy } from "react";
 
-type Props = {}
+type Props = {};
 
 function Gallery({}: Props) {
+  let src = [
+    "./../src/assets/gallery/1.png",
+    "./../src/assets/gallery/2.png",
+    "./../src/assets/gallery/3.png",
+    "./../src/assets/gallery/4.png",
+    "./../src/assets/gallery/5.png",
+    "./../src/assets/gallery/6.png",
+  ];
+
+  // const handleClick = (e: MouseEvent) => {
+  //   console.log(e);
+  //   e.movementX = 10;
+  // };
+  // const images = lazy(()=> import("./assets/1.png") );
+
   return (
-<div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-  <ol className="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img className="d-block w-100" src="..." alt="First slide" />
+    <div className="container">
+      <div className="row align-items-center">
+        <div className="col">
+          <div className="card">
+            <img className="card-img-top" src={src[0]} alt="Card image cap" />
+          </div>
+        </div>
+        <div className="col">
+          <div className="card">
+            <img className="card-img-top" src={src[1]} alt="Card image cap" />
+          </div>
+        </div>
+        <div className="w-100"></div>
+        <div className="col">One of three columns</div>
+        <div className="col">One of three columns</div>
+        <div className="w-100"></div>
+        <div className="col">One of three columns</div>
+        <div className="col">One of three columns</div>
+        <div className="w-100"></div>
+        <div className="col">One of three columns</div>
+        <div className="col">One of three columns</div>
+        <div className="w-100"></div>
+        <div className="col">One of three columns</div>
+        <div className="col">One of three columns</div>
+        <div className="w-100"></div>
+        <div className="col">One of three columns</div>
+        <div className="col">One of three columns</div>
+        <div className="w-100"></div>
+        <div className="col">One of three columns</div>
+        <div className="col">One of three columns</div>
+        <div className="w-100"></div>
+        <div className="col">One of three columns</div>
+        <div className="col">One of three columns</div>
+      </div>
     </div>
-    <div className="carousel-item">
-      <img className="d-block w-100" src="..." alt="Second slide" />
-    </div>
-    <div className="carousel-item">
-      <img className="d-block w-100" src="..." alt="Third slide" />
-    </div>
-  </div>
-  <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="sr-only">Previous</span>
-  </a>
-  <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="sr-only">Next</span>
-  </a>
-</div>
-  )
+  );
 }
 
 export default Gallery;
