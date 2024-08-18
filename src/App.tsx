@@ -1,42 +1,40 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Inicio from "./pages/Inicio";
 import Gaceta from "./pages/Gaceta";
+import NotFound from "./pages/NotFound";
 import Direccion from "./pages/Direccion";
 import Contacto from "./pages/Contacto";
 import Navbar from "./components/Navbar";
+import NavIcon from "./components/NavIcon";
+import Footer from "./components/Footer";
 
 function App() {
-  // let component
-  // switch (window.location.pathname) {
-  //   case "/":
-  //     component = <Inicio />
-  //     break
-  //     case "/gaceta":
-  //       component = <Gaceta />
-  //       break
-  //       case "/direccion":
-  //     component = <Direccion />
-  //     break
-  //     case "/contacto":
-  //     component = <Contacto />
-  //     break
-  // }
   return (
     <>
+      <NavIcon />
       <Navbar />
-      <div className="container">
-        <Router>
-          <Routes>
-            <Route path="/" element={<Inicio />} />
-            <Route path="/gaceta" element={<Gaceta />} />
-            <Route path="/direccion" element={<Direccion />} />
-            <Route path="/contacto" element={<Contacto />} />
-          </Routes>
-        </Router>
-      </div>
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/gaceta" element={<Gaceta />} />
+        <Route path="/direccion/:id" element={<Direccion />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
     </>
   );
 }
 
 export default App;
+
+// Install an updated version of React router. just to make sure.
+{
+  /* <Route path="/direccion" element={<Direccion />} /> */
+}
+
+{
+  /* <Route path="/direccion/asf" element={<Direccion />} />
+        <Route path="/direccion/asdf" element={<Direccion />} />
+        <Route path="/direccion/aaa" element={<Direccion />} /> */
+}

@@ -12,6 +12,12 @@ function Navbar() {
     "Dirección Administrativa Financiera",
     "Desarrollo Humano",
   ];
+  let navLinks = [
+    "agronomia-y-medio-ambiente",
+    "urbanismo-y-catastro",
+    "administrativa-financiera",
+    "desarrollo-humano",
+  ];
   return (
     <div className="container">
       <ul className="nav justify-content-center bg-light">
@@ -20,13 +26,17 @@ function Navbar() {
             Inicio
           </a>
         </li> */}
-        <Link to="/">Inicio</Link>
+        <Link to="/" className="nav-link active">
+          Inicio
+        </Link>
         {/* <li className="nav-item">
           <a className="nav-link" href="#">
             Gaceta
           </a>
         </li> */}
-        <Link to="/gaceta">Gaceta</Link>
+        <Link to="/gaceta" className="nav-link">
+          Gaceta
+        </Link>
         <li className="nav-item dropdown">
           <a
             className="nav-link dropdown-toggle"
@@ -40,16 +50,26 @@ function Navbar() {
             Direcciones
           </a>
           <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <Link to={"/" + dropdownMenu[0]}>{dropdownMenu[0]}</Link>
-            <Link to={"/" + dropdownMenu[1]}>{dropdownMenu[1]}</Link>
-            <Link to={"/" + dropdownMenu[2]}>{dropdownMenu[2]}</Link>
-            <Link to={"/" + dropdownMenu[3]}>{dropdownMenu[3]}</Link>
+            <Link to={"/direccion/" + navLinks[0]} className="nav-link">
+              {dropdownMenu[0]}
+            </Link>
+            <Link to={"/direccion/" + navLinks[1]} className="nav-link">
+              {dropdownMenu[1]}
+            </Link>
+            <Link to={"/direccion/" + navLinks[2]} className="nav-link">
+              {dropdownMenu[2]}
+            </Link>
+            <Link to={"/direccion/" + navLinks[3]} className="nav-link">
+              {dropdownMenu[3]}
+            </Link>
           </div>
         </li>
         {/* <li className="nav-item">
     <a className="nav-link" href="#">Contáctanos</a>
   </li> */}
-        <Link to="/contacto">Contáctanos</Link>
+        <Link to="/contacto" className="nav-link">
+          Contáctanos
+        </Link>
       </ul>
     </div>
   );
