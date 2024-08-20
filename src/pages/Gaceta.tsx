@@ -386,7 +386,7 @@ function Gaceta() {
                   <td data-cell="descripcion">
                     <div className="btn-group dropleft">
                       <button
-                        className="btn btn-success btn-sm"
+                        className="btn btn-success btn-sm dropdown-toggle"
                         type="button"
                         data-toggle="dropdown"
                         aria-haspopup="true"
