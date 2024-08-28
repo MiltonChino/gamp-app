@@ -13,6 +13,7 @@ import CallAction, { CallActionBody } from "./../components/CallAction";
 import Scroller, { ScrollCard } from "./../components/Scroller";
 // import Footer from "./../components/Footer";
 import Gallery from "./../components/Gallery";
+import CardV5 from "./../components/CardV5";
 // import Parallax from './components/Parallax';
 // import {ReactDataTables} from 'react-data-tables-components';
 // import Counter from './components/Counter'
@@ -142,6 +143,7 @@ function App() {
           </Scroller>
         </div>
         <Gallery />
+        <CardV5 />
       </div>
       {/* <Accordion /> */}
       {/* <a href="https://gampasorapa.gob.bo/" target="_blank">Gobierno Autonomo Municipal de Pasorapa</a> */}
