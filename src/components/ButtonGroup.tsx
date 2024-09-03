@@ -1,6 +1,7 @@
 // type Props = {
 //   data: string[];
 // };
+// import { Link } from "react-router-dom";
 import icon1 from './../assets/btg-icon1.png';
 import icon2 from './../assets/btg-icon2.png';
 import icon3 from './../assets/btg-icon3.png';
@@ -11,19 +12,19 @@ function ButtonGroup() {
   return (
     <div className="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
       <div className="btn-group btn-group-md" role="group" aria-label="First group">
-        <button type="button" className="btn btn-secondary">
+        <button type="button" className="btn btn-light">
         <img src={icon1} className='rounded mx-auto d-block' width='100'  alt="" />
         Municipio
         </button>
-        <button type="button" className="btn btn-secondary">
+        <button type="button" className="btn btn-light">
         <img src={icon2} className='rounded mx-auto d-block' width='100' alt="" />
         Gaceta
         </button>
-        <button type="button" className="btn btn-secondary">
+        <button type="button" className="btn btn-light">
         <img src={icon3} className='rounded mx-auto d-block' width='100' alt="" />
         Direcciones
         </button>
-        <button type="button" className="btn btn-secondary">
+        <button type="button" className="btn btn-light">
         <img src={icon4} className='rounded mx-auto d-block' width='100' alt="" />
         Servicios
         </button>
