@@ -1,15 +1,34 @@
+import { Link } from "react-router-dom";
 // type Props = {
 //   data: string[];
 // };
 
 function Footer() {
+  const style = {
+    color: "#ffffff",
+    backgroundColor: 'rgb(0, 128, 55)',
+    
+  }
+  let navLinks = [
+    "agronomia-y-medio-ambiente",
+    "urbanismo-y-catastro",
+    "administrativa-financiera",
+    "desarrollo-humano",
+  ];
+  
+  let dropdownMenu = [
+    "Dirección de Agronomía y Medio Ambiente",
+    "Dirección Urbanismo y Catástro",
+    "Dirección Administrativa Financiera",
+    "Desarrollo Humano",
+  ];
     // let companyName = "Gobierno Autónomo Municipal de Pasorapa";
     // let dropdownMenu = ["Dirección de Agronomía y Medio Ambiente","Dirección Urbanismo y Catástro", "Dirección Administrativa Financiera", "Desarrollo Humano"]
     return (
-      <div className="container">
-  <div className="row">
+      <div className="container" style={style}>
+  <div className="row d-flex align-items-center">
     <div className="col-sm">
-      image Here
+            <img className="card-img-top rounded" src={"./../src/assets/footer-img1.png"} alt="Card image cap" />
     </div>
     <div className="col-sm">
         {/* <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -24,25 +43,37 @@ function Footer() {
         </div> */}
           <ul className="nav flex-column">
             <li className="nav-item">
-              <a className="nav-link active" href="#">Active</a>
+            <Link to="/" className="nav-link" style={style}>
+          Inicio
+        </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
+            <Link to="/gaceta" className="nav-link" style={style}>
+          Gaceta
+        </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled" href="#">Disabled</a>
+            <Link to="/contacto" className="nav-link" style={style}>
+          Contáctanos
+        </Link>
             </li>
           </ul>
     </div>
+    {/* <div className="dropdown-divider"></div> */}
     <div className="col-sm">
     <nav className="nav flex-column">
-  <a className="nav-link active" href="#">Active</a>
-  <a className="nav-link" href="#">Link</a>
-  <a className="nav-link" href="#">Link</a>
-  <a className="nav-link disabled" href="#">Disabled</a>
+    <Link to={"/direccion/" + navLinks[0]} className="nav-link" style={style}>
+              {dropdownMenu[0]}
+            </Link>
+            <Link to={"/direccion/" + navLinks[1]} className="nav-link" style={style}>
+              {dropdownMenu[1]}
+            </Link>
+            <Link to={"/direccion/" + navLinks[2]} className="nav-link" style={style}>
+              {dropdownMenu[2]}
+            </Link>
+            <Link to={"/direccion/" + navLinks[3]} className="nav-link" style={style}>
+              {dropdownMenu[3]}
+            </Link>
 </nav>
     </div>
           </div>

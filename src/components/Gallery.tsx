@@ -13,11 +13,10 @@ function Gallery({}: Props) {
     "./../src/assets/gallery-6.jpg",
   ];
 
-  // const handleClick = (e: MouseEvent) => {
-  //   console.log(e);
-  //   e.movementX = 10;
-  // };
-  // const images = lazy(()=> import("./assets/1.png") );
+// const gallery =""
+// for (let index = 0; index < src.length; index++) {
+//   const display = src[index]; 
+// }
 
   return (
     <div className="container">

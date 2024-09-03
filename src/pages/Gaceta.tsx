@@ -1,3 +1,4 @@
+// import Button from "../components/Button";
 import "./../App.css";
 // import style from "styled-components"
 
@@ -52,8 +53,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1-4o63tSbs-053c1_J2LFOisYMBTcq6iN"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -86,8 +89,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1RX4SV3iTFRusfwFqRTPh-Ada9wRHCD0a"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -117,8 +122,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1LPokGHjCfG3dMxQPo2JvuP3gZk3Bn0Ok"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -149,8 +156,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1OjDRXpwTMY6TK7BPO-6hRKgDIBGziL60"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -180,8 +189,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1VzhN4fKa-UlGXw5JDl49q_bLoNbd59C-"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -213,8 +224,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1O9GDO9w04gOTyButpF0WJQ68DYUkIVeT"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -244,8 +257,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1r4yQ9HbJ-AopRmCytuLb6lIrhIok89iG"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -277,8 +292,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1r4SGbrBexPVqh_Bexg2k7ojfz6zpw-lP"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -312,8 +329,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1mxd7_8XYtJzfhSLSDpjirxDr8WT3vEKE"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -342,8 +361,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1NKN6f75HV0UWBauzGq4RXUdMv-V0-_wm"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -373,8 +394,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=116sfPY23q23GzK8n5Z7NyF7sHwqii13R"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -386,7 +409,7 @@ function Gaceta() {
                   <td data-cell="descripcion">
                     <div className="btn-group dropleft">
                       <button
-                        className="btn btn-success btn-sm dropdown-toggle"
+                        className="btn btn-success btn-sm"
                         type="button"
                         data-toggle="dropdown"
                         aria-haspopup="true"
@@ -404,8 +427,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1kxlVFZSWBJxH83IYAClrH3i0Yd6gS30q"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -437,8 +462,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1e2516xuX-X0eNYwdRg53PX190v6Kczwc"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -468,8 +495,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1TY_5fLJPdaz8MOPnPxHgFL5ZDHIIGMSN"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -500,8 +529,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=15oqS7W2HrFkAoXNGXjT4vdNnCD0R70vx"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -531,8 +562,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1LLGz52Oj37j2pOJcll4xzZ9tfXIZeWNs"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -569,8 +602,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=10nOpTJD-0mHxPtr5m0CGDKCCFPENEn8B"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -599,8 +634,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1gnzJvpwz1wNDu_tCYcOX2aLNEqInV84s"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -633,8 +670,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/open?id=1gnzJvpwz1wNDu_tCYcOX2aLNEqInV84s"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>
@@ -665,8 +704,10 @@ function Gaceta() {
                   </td>
                   <td data-cell="enlace">
                     <a
+                      className="btn btn-primary"
                       href="https://drive.google.com/file/d/115PWtAzTTzXoC-YXbPDY9VY2Rl4Cgm0_/view?usp=drive_link"
                       target="_blank"
+                      role="button"
                     >
                       Descargar
                     </a>

@@ -13,7 +13,7 @@ import CallAction, { CallActionBody } from "./../components/CallAction";
 import Scroller, { ScrollCard } from "./../components/Scroller";
 // import Footer from "./../components/Footer";
 import Gallery from "./../components/Gallery";
-import CardV5 from "./../components/CardV5";
+import Titulo from "../components/Titulo";
 // import Parallax from './components/Parallax';
 // import {ReactDataTables} from 'react-data-tables-components';
 // import Counter from './components/Counter'
@@ -87,63 +87,74 @@ function App() {
         <div className="container" style={styles}>
           <Scroller>
             <ScrollCard
-              title={"1"}
-              text={"pres"}
-              hasButton={true}
-              src={"..."}
-            />
-            <ScrollCard title={"2"} text={"sec"} hasButton={true} src={"..."} />
-            <ScrollCard
-              title={"3"}
-              text={"cons"}
-              hasButton={true}
+              title={"Honorable Alcalde Municipal"}
+              text={"Lic. Ismael Rios Castro"}
+              hasButton={false}
               src={"..."}
             />
             <ScrollCard
-              title={"4"}
-              text={"cons"}
-              hasButton={true}
+              title={"Secretario Municipal General"}
+              text={"Ronaldt Torrez"}
+              hasButton={false}
               src={"..."}
             />
             <ScrollCard
-              title={"5"}
-              text={"cons"}
-              hasButton={true}
+              title={"Dir. Administrativa Financiera"}
+              text={"Marizol Terceros Panozo"}
+              hasButton={false}
+              src={"..."}
+            />
+            <ScrollCard
+              title={"Dir. Obras Publicas y Urbanismo"}
+              text={"Paulo Cesar Salvatierra Quiroz"}
+              hasButton={false}
+              src={"..."}
+            />
+            <ScrollCard
+              title={"Dir. Desarrollo Agropecuario y Medio Ambiente"}
+              text={"Maximo Espinoza Balderrama"}
+              hasButton={false}
               src={"..."}
             />
           </Scroller>
         </div>
         <div className="container" style={styles}>
+          {/* <Titulo display=""/> */}
           <Scroller>
             <ScrollCard
-              title={"1"}
-              text={"pres"}
-              hasButton={true}
-              src={"..."}
-            />
-            <ScrollCard title={"2"} text={"sec"} hasButton={true} src={"..."} />
-            <ScrollCard
-              title={"3"}
-              text={"cons"}
-              hasButton={true}
+              title={"Presidenta"}
+              text={"Ruth Giovanna Camacho Martinez"}
+              hasButton={false}
               src={"..."}
             />
             <ScrollCard
-              title={"4"}
-              text={"cons"}
-              hasButton={true}
+              title={"Vice-Presidenta"}
+              text={"Jenny Hinojosa Moscoso"}
+              hasButton={false}
               src={"..."}
             />
             <ScrollCard
-              title={"5"}
-              text={"cons"}
-              hasButton={true}
+              title={"Secretaria"}
+              text={"Teodorica Tapia"}
+              hasButton={false}
+              src={"..."}
+            />
+            <ScrollCard
+              title={"Concejal"}
+              text={"Darlen Escobar Contreras"}
+              hasButton={false}
+              src={"..."}
+            />
+            <ScrollCard
+              title={"Concejal"}
+              text={"Edgar J. Alvarez Pedrazas"}
+              hasButton={false}
               src={"..."}
             />
           </Scroller>
         </div>
+        <div className="container"></div>
         <Gallery />
-        <CardV5 />
       </div>
       {/* <Accordion /> */}
       {/* <a href="https://gampasorapa.gob.bo/" target="_blank">Gobierno Autonomo Municipal de Pasorapa</a> */}
