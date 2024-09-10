@@ -1,4 +1,5 @@
 // import Button from "../components/Button";
+import Table from "../components/Table";
 import "./../App.css";
 // import style from "styled-components"
 
@@ -9,6 +10,8 @@ function Gaceta() {
 
   return (
     <>
+<Table />
+
       <div className="container">
         <div className="gaceta-sec">
           <h1>Gaceta del Gobierno Autónomo Municipal de Pasorapa</h1>

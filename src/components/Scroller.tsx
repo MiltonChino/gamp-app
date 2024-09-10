@@ -7,6 +7,7 @@ type cardProps = {
 function Scroller(props: cardProps) {
     const width = {
       width: "25wh",
+      margin: "10px"
     };
     const {children} = props; 
     return (
@@ -32,7 +33,7 @@ function Scroller(props: cardProps) {
     return (
       <>
       <div className="card">
-      <img className="card-img-top" src={src} alt="Card image cap" />
+      <img src={src} className="card-img-top" alt="Card image cap" />
         <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">
