@@ -10,12 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/jquery": "^4.0.1",
     "@types/react-router": "^5.1.20",
     "@types/react-router-dom": "^5.3.3",
     "bootstrap": "^5.3.3",
+    "datatables.net": "^3.0.1",
+    "datatables.net-dt": "^3.0.1",
+    "datatables.net-react": "^1.0.2",
+    "jquery": "^4.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.85.0",
     "react-router": "^6.26.1",
     "react-router-dom": "^6.26.1",
     "styled-components": "^6.1.12"

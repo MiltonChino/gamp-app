@@ -1,5 +1,6 @@
-# Node modules
 node_modules/
-
-.vscode/
-dist
+dist/
+.env
+.env.local
+.env.development
+.env.production 
