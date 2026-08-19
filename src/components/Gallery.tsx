@@ -16,13 +16,18 @@ function Gallery() {
   ];
 
   return (
-    <div className="container my-4">
-      <h3 className="text-center font-weight-bold mb-4">Galería Fotográfica</h3>
-      <div className="row">
+    <div className="container my-5 gallery-section">
+      <div className="text-center mb-4">
+        <h3 className="section-header-title font-weight-bold">Galería Fotográfica</h3>
+        <div className="card-title-accent mx-auto"></div>
+      </div>
+      <div className="row g-4">
         {images.map((item) => (
-          <div className="col-12 col-sm-6 col-md-4 gallery-card" key={item.id}>
-            <div className="card h-100 shadow-sm">
-              <img className="card-img-top gallery-img rounded" src={item.src} alt={item.alt} />
+          <div className="col-12 col-sm-6 col-md-4 gallery-card-col mb-4" key={item.id}>
+            <div className="card gallery-card h-100 border-0">
+              <div className="gallery-img-wrapper">
+                <img className="gallery-img" src={item.src} alt={item.alt} />
+              </div>
             </div>
           </div>
         ))}

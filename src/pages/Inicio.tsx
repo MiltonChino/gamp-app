@@ -65,8 +65,11 @@ function App() {
         </Jumbotron>
 
         {/* Autoridades Ejecutivas */}
-        <div className="my-4">
-          <h4 className="text-center font-weight-bold mb-3">Órgano Ejecutivo</h4>
+        <div className="my-5 authorities-section">
+          <div className="text-center mb-4">
+            <h3 className="section-header-title font-weight-bold">Órgano Ejecutivo</h3>
+            <div className="card-title-accent mx-auto"></div>
+          </div>
           <Scroller>
             <ScrollCard
               title={"Honorable Alcalde Municipal"}
@@ -102,8 +105,11 @@ function App() {
         </div>
 
         {/* Concejo Municipal */}
-        <div className="my-4">
-          <h4 className="text-center font-weight-bold mb-3">Concejo Municipal</h4>
+        <div className="my-5 authorities-section">
+          <div className="text-center mb-4">
+            <h3 className="section-header-title font-weight-bold">Concejo Municipal</h3>
+            <div className="card-title-accent mx-auto"></div>
+          </div>
           <Scroller>
             <ScrollCard
               title={"Presidenta"}

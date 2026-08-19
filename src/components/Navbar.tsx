@@ -34,11 +34,12 @@ function Navbar() {
 
   const style = {
     color: "#ffffff",
-    backgroundColor: 'rgb(0, 128, 55)'
+    backgroundColor: 'rgb(0, 128, 55)',
+    borderRadius: '0 0 4px 4px'
   };
 
   return (
-    <div className="container" style={style}>
+    <div className="container mb-3" style={style}>
       <nav className="navbar navbar-expand-md navbar-dark p-2" style={style}>
         {/* Mobile Header Bar with 3 Dashes (Hamburger) / X Close Icon */}
         <div className="d-flex justify-content-between align-items-center w-100 d-md-none">

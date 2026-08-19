@@ -24,16 +24,18 @@ export function CallActionBody(props: CardBodyProps) {
   let {title, text, hasButton, img} = props;
   let button;
   if (hasButton) {
-    button = <a href='#' className='btn btn-primary mt-3'>Descubre más</a>;
+    button = <a href='#' className='btn call-action-glass-btn'>Descubre más</a>;
   }
   const CAImg = img ? <img className="card-img" src={img} alt="Call to Action" /> : '';
   return (
     <>
       {CAImg}
       <div className="call-action-overlay">
-        <h3 className="card-title font-weight-bold">{title}</h3>
-        <p className="card-text lead max-w-700">{text}</p>
-        {button}
+        <div className="call-action-glass-box">
+          <h3 className="card-title call-action-title font-weight-bold">{title}</h3>
+          <p className="card-text call-action-text lead max-w-700">{text}</p>
+          {button}
+        </div>
       </div>
     </>
   );

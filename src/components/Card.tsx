@@ -2,12 +2,13 @@ import { ReactNode } from "react";
 
 type cardProps = {
   children: ReactNode,
+  className?: string,
 }
 
 function Card(props: cardProps) {
-  const {children} = props; 
+  const {children, className = ""} = props; 
   return (
-    <div className="card custom-card-wrapper h-100">
+    <div className={`card custom-card-wrapper h-100 ${className}`}>
       <div className="card-body d-flex flex-column justify-content-between">
         {children}
       </div>
@@ -29,9 +30,11 @@ export function CardBody(props: CardBodyProps) {
   }
   return (
     <>
-      <h5 className="card-title font-weight-bold text-center mb-3">{title}</h5>
-      <hr className="my-2" />
-      <p className="card-text text-justify">
+      <div className="card-header-wrapper text-center">
+        <h4 className="card-title font-weight-bold text-center mb-2 mission-vision-title">{title}</h4>
+        <div className="card-title-accent mx-auto"></div>
+      </div>
+      <p className="card-text text-justify mission-vision-text mt-3">
         {text}
       </p>
       {button}
