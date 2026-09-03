@@ -1,22 +1,87 @@
-// import React from 'react'
-
 function Info() {
-const style = {
-    color: '#000000',
-    textDecoration: 'none'
-}
-    return (
-    <div>
-        <h4>Encuentranos Aquí</h4>
-        <ul>
-            <li>Dirección: Edificio Municipal: plaza 5 de Marzo acera oeste, localidad de Pasorapa</li>
-            <li>Teléfono: <a href="tel:+59172242555" className="badge badge-light" style={style}>73-794-170</a></li>
-            <li>Correo: <a href="mailto:municipalidadpasorapa@gmail.com" className="badge badge-light" style={style}>contacto@gampasorapa.gob.bo</a></li>
-            <li>WhatsApp: <a href="https://wa.link/xwkra8" className="badge badge-light" style={style}>73-794-170</a></li>
-            <li><a href='https://maps.google.com/?cid=13649522687063751516&entry=gps' className="badge badge-info" style={{textDecoration: 'none'}}>Ver mapa</a></li>
-        </ul>
+  return (
+    <div className="contact-card">
+      <h3 className="contact-card-title">
+        <span>📌</span> Información Institucional
+      </h3>
+
+      <ul className="contact-info-list">
+        <li className="contact-info-item">
+          <div className="contact-info-icon" aria-hidden="true">📍</div>
+          <div className="contact-info-content">
+            <div className="contact-info-label">Dirección Principal</div>
+            <div className="contact-info-value">
+              Edificio Municipal: Plaza 5 de Marzo acera oeste, Pasorapa, Cochabamba, Bolivia
+            </div>
+            <a
+              href="https://maps.google.com/?cid=13649522687063751516&entry=gps"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-action-badge badge-outline mt-2"
+            >
+              🗺️ Abrir en Google Maps
+            </a>
+          </div>
+        </li>
+
+        <li className="contact-info-item">
+          <div className="contact-info-icon" aria-hidden="true">📞</div>
+          <div className="contact-info-content">
+            <div className="contact-info-label">Teléfono de Atención</div>
+            <div className="contact-info-value">+591 73-794-170</div>
+            <a
+              href="tel:+59173794170"
+              className="contact-action-badge mt-2"
+            >
+              📞 Llamar ahora
+            </a>
+          </div>
+        </li>
+
+        <li className="contact-info-item">
+          <div className="contact-info-icon" aria-hidden="true">💬</div>
+          <div className="contact-info-content">
+            <div className="contact-info-label">WhatsApp Institucional</div>
+            <div className="contact-info-value">+591 73-794-170</div>
+            <a
+              href="https://wa.link/xwkra8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-action-badge badge-whatsapp mt-2"
+            >
+              💬 Mensaje por WhatsApp
+            </a>
+          </div>
+        </li>
+
+        <li className="contact-info-item">
+          <div className="contact-info-icon" aria-hidden="true">✉️</div>
+          <div className="contact-info-content">
+            <div className="contact-info-label">Correo Electrónico</div>
+            <div className="contact-info-value">
+              contacto@gampasorapa.gob.bo
+            </div>
+            <a
+              href="mailto:contacto@gampasorapa.gob.bo"
+              className="contact-action-badge badge-outline mt-2"
+            >
+              ✉️ Enviar correo
+            </a>
+          </div>
+        </li>
+
+        <li className="contact-info-item">
+          <div className="contact-info-icon" aria-hidden="true">⏰</div>
+          <div className="contact-info-content">
+            <div className="contact-info-label">Horario de Atención</div>
+            <div className="contact-info-value">
+              Lunes a Viernes: 08:00 - 12:00 | 14:00 - 18:00
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
-  )
+  );
 }
 
-export default Info
+export default Info;
